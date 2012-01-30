@@ -1,0 +1,167 @@
+;PYCAM-META-DATA: Filename: /home/abarry/MIT/RLG/robotlib3/robots/Plane/CAD/Rev3/CAM/cameraCowlForCAM3.STL
+;PYCAM-META-DATA: Timestamp: 2012-01-30 01:24:07.621850
+;PYCAM-META-DATA: Version: 0.5.1
+;Estimated machine time: 9 minutes
+G40 (disable tool radius compensation)
+G49 (disable tool length compensation)
+G80 (cancel modal motion)
+G54 (select coordinate system 1)
+G90 (disable incremental moves)
+G21 (metric)
+G64 (continuous mode with maximum speed)
+F152.00000
+S1000.00000
+;PYCAM_TOOLPATH_SETTINGS: START
+;[Bounds]
+;maxz = 31.7568397522
+;maxx = 41.5137964323
+;maxy = 30.3634833477
+;minx = -1.26652210802
+;miny = -0.25077349022
+;minz = 0.00683790026233
+;
+;[Tool]
+;torus_radius = 0.25
+;speed = 1000.0
+;shape = CylindricalCutter
+;tool_radius = 2.75
+;feedrate = 152.0
+;
+;[Process]
+;engrave_offset = 0.0
+;step_down = 8.0
+;generator = PushCutter
+;postprocessor = SimpleCutter
+;overlap_percent = 0
+;milling_style = ignore
+;material_allowance = 4.0
+;pocketing_type = none
+;path_direction = x
+;
+;PYCAM_TOOLPATH_SETTINGS: END
+T2 M6
+G0 Z35.0000
+M3 (start spindle)
+G04 P3 (wait for 3 seconds)
+ X-1.2665 Y-0.2508
+G1 Z31.7568
+ X10.1748
+G0 Z35.0000
+ X30.1439
+G1 Z31.7568
+ X41.5138
+ Y4.8516
+ X35.2920
+G0 Z35.0000
+ X5.0375
+G1 Z31.7568
+ X-1.2665
+ Y9.9540
+ X2.6833
+G0 Z35.0000
+ X37.6321
+G1 Z31.7568
+ X41.5138
+ Y15.0564
+ X38.3322
+G0 Z35.0000
+ X24.8211
+G1 Z31.7568
+ X15.4962
+G0 Z35.0000
+ X1.9800
+G1 Z31.7568
+ X-1.2665
+ Y20.1587
+ X2.7658
+G0 Z35.0000
+ X37.5638
+G1 Z31.7568
+ X41.5138
+ Y25.2611
+ X35.0891
+G0 Z35.0000
+ X5.2062
+G1 Z31.7568
+ X-1.2665
+ Y30.3635
+ X10.5861
+G0 Z35.0000
+ X29.7438
+G1 Z31.7568
+ X41.5138
+ Z23.8193
+ X33.2000
+G0 Z35.0000
+ X7.1076
+G1 Z23.8193
+ X-1.2665
+ Y25.2611
+ X1.6341
+G0 Z35.0000
+ X38.6663
+G1 Z23.8193
+ X41.5138
+ Y20.1587
+ X40.0442
+G0 Z35.0000
+ X0.2562
+G1 Z23.8193
+ X-1.2665
+ Y15.0564
+ X-0.2007
+G0 Z35.0000
+ X18.2821
+G1 Z23.8193
+ X21.9860
+G0 Z35.0000
+ X40.5011
+G1 Z23.8193
+ X41.5138
+ Y9.9540
+ X40.0791
+G0 Z35.0000
+ X0.2213
+G1 Z23.8193
+ X-1.2665
+ Y4.8516
+ X1.5511
+G0 Z35.0000
+ X38.7493
+G1 Z23.8193
+ X41.5138
+ Y-0.2508
+ X33.5429
+G0 Z35.0000
+ X6.7575
+G1 Z23.8193
+ X-1.2665
+ Z15.8818
+ X2.0735
+G0 Z35.0000
+ X38.2092
+G1 Z15.8818
+ X41.5138
+G0 Z35.0000
+ X21.3515 Y15.0564
+G1 Z15.8818
+ X18.8958
+G0 Z35.0000
+ X-1.2665 Y30.3635
+G1 Z15.8818
+ X2.3324
+G0 Z35.0000
+ X37.9494
+G1 Z15.8818
+ X41.5138
+G0 Z35.0000
+ X18.8958 Y15.0564
+G1 Z7.9443
+ X21.3515
+ Z0.0068
+ X18.8958
+G0 Z35.0000
+M5 (stop spindle)
+G04 P3 (wait for 3 seconds)
+G0 Z35.0000
+M2 (end program)
