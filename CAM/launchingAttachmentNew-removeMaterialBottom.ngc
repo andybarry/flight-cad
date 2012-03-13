@@ -1,0 +1,85 @@
+;PYCAM-META-DATA: Filename: C:\Users\abarry\Documents\CAD\Rev3\CAM\launchingAttachmentNew.stl
+;PYCAM-META-DATA: Timestamp: 2012-03-13 16:29:40.058000
+;PYCAM-META-DATA: Version: 0.5.1
+;Estimated machine time: 1 minutes
+G40 (disable tool radius compensation)
+G49 (disable tool length compensation)
+G80 (cancel modal motion)
+G54 (select coordinate system 1)
+G90 (disable incremental moves)
+G20 (imperial)
+G61 (exact path mode)
+F20.00000
+S1000.00000
+;PYCAM_TOOLPATH_SETTINGS: START
+;[Bounds]
+;maxz = 0.814690710011
+;maxx = 1.48750002002
+;maxy = 0.787500020023
+;minx = 0.0625
+;miny = 0.0625
+;minz = 0.0
+;
+;[Tool]
+;torus_radius = 0.00984251968504
+;speed = 1000.0
+;shape = CylindricalCutter
+;tool_radius = 0.0625
+;feedrate = 20.0
+;
+;[Process]
+;generator = PushCutter
+;pocketing_type = none
+;engrave_offset = 0.0
+;milling_style = ignore
+;path_direction = x
+;step_down = 0.11811023622
+;postprocessor = SimpleCutter
+;overlap_percent = 0
+;material_allowance = 0.0196850393701
+;
+;PYCAM_TOOLPATH_SETTINGS: END
+T1 M6
+G0 Z1.0000
+ X0.2034 Y0.0625
+G1 Z0.8147
+ X1.3466
+G0 Z1.0000
+ X1.4875 Y0.1833
+G1 Z0.8147
+ X0.0625
+ Y0.3042
+ X1.4875
+ Y0.4250
+ X0.0625
+ Y0.5458
+ X1.4875
+ Y0.6667
+ X0.0625
+G0 Z1.0000
+ X0.2034 Y0.7875
+G1 Z0.8147
+ X1.3466
+G0 Z1.0000
+ X1.3178
+G1 Z0.6983
+ X0.2322
+ X0.2307 Y0.6667
+ X1.3193
+G0 Z1.0000
+ X1.4875 Y0.5458
+G1 Z0.6983
+ X0.0625
+ Y0.4250
+ X1.4875
+ Y0.3042
+ X0.0625
+G0 Z1.0000
+ X0.2307 Y0.1833
+G1 Z0.6983
+ X1.3193
+ X1.3178 Y0.0625
+ X0.2322
+G0 Z1.0000
+G0 Z1.0000
+M2 (end program)
