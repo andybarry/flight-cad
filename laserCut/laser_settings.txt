@@ -10,7 +10,7 @@ waves-poster-board - pwr:70% , speed: 20%
 
 Tim:
 
-delrin - 1/8" - pwr: 68%, speed:7.2%, 600 PPI
+delrin - 1/8" - pwr: 68%, speed:5.8%, 600 PPI
 
 EPP speed 30%, power 60%  200 ppi
 
