@@ -1,0 +1,202 @@
+<robot
+  name="TBSC_assembly">
+  <link
+    name="fuselage">
+    <inertial>
+      <origin
+        xyz="-0.0337914194338085 -4.68148553041218E-06 0.0045784133045292"
+        rpy="0 0 0" />
+      <mass
+        value="3.93063917836941" />
+      <inertia
+        ixx="0.168396870766522"
+        ixy="1.44150457896081E-06"
+        ixz="0.000384761818176483"
+        iyy="0.0219414278204019"
+        iyz="3.82786981299679E-08"
+        izz="0.189763340790035" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/fuselage.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/fuselage.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="elevon_left">
+    <inertial>
+      <origin
+        xyz="0.0242538089747249 -0.14091281368035 -0.00289559303673048"
+        rpy="0 0 0" />
+      <mass
+        value="0.0502097079170441" />
+      <inertia
+        ixx="0.000341805101217881"
+        ixy="-0.000102025740453259"
+        ixz="-7.2405358865327E-07"
+        iyy="3.58519845473833E-05"
+        iyz="1.18728695055961E-06"
+        izz="0.000377341630180513" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/elevon_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.984313725490196 1 0.396078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/elevon_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elevon_left_joint"
+    type="continuous">
+    <origin
+      xyz="-0.21056 0.43253 0.0089456"
+      rpy="0 0 0" />
+    <parent
+      link="fuselage" />
+    <child
+      link="elevon_left" />
+    <axis
+      xyz="0.26961 -0.96297 -0.0017045" />
+  </joint>
+  <link
+    name="elevon_right">
+    <inertial>
+      <origin
+        xyz="0.024253835870427 0.140912596890868 -0.00289560053915247"
+        rpy="0 0 0" />
+      <mass
+        value="0.0502094931641425" />
+      <inertia
+        ixx="0.000341804248872951"
+        ixy="0.000102025728224209"
+        ixz="-7.24049489720693E-07"
+        iyy="3.58519484707554E-05"
+        iyz="-1.18730197741656E-06"
+        izz="0.00037734074315353" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/elevon_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.988235294117647 0.984313725490196 0.556862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/elevon_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elevon_right_joint"
+    type="continuous">
+    <origin
+      xyz="-0.21054 -0.43247 0.0089455"
+      rpy="0 0 0" />
+    <parent
+      link="fuselage" />
+    <child
+      link="elevon_right" />
+    <axis
+      xyz="0.26961 0.96297 -0.0017045" />
+  </joint>
+  <link
+    name="prop">
+    <inertial>
+      <origin
+        xyz="0.0264162284064198 -2.63490962391404E-08 0.000889744026452184"
+        rpy="0 0 0" />
+      <mass
+        value="0.0158470003553277" />
+      <inertia
+        ixx="1.93910826339752E-05"
+        ixy="-2.23597180216005E-07"
+        ixz="-8.44849578720071E-08"
+        iyy="4.12864895894802E-06"
+        iyz="6.63862732805325E-06"
+        izz="1.68855842139028E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/prop.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TBSC_assembly/meshes/prop.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="prop_joint"
+    type="continuous">
+    <origin
+      xyz="-0.13932 0 0.0011872"
+      rpy="0 0 0" />
+    <parent
+      link="fuselage" />
+    <child
+      link="prop" />
+    <axis
+      xyz="0.99943 0 0.033663" />
+  </joint>
+</robot>
