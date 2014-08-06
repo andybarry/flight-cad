@@ -1,0 +1,6 @@
+<package>
+  <description brief="TBSC_assembly_urdf2">TBSC_assembly_urdf2</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>
